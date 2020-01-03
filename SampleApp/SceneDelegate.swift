@@ -47,7 +47,22 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
     }
+    
+    func showDashboard() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "DashboardViewController")
+        let navigation = UINavigationController(rootViewController: vc)
+        self.window?.rootViewController = navigation
+        self.window?.makeKeyAndVisible()
 
+        // Animation
+        let options: UIView.AnimationOptions = .transitionCrossDissolve
+        let duration: TimeInterval = 0.3
+        UIView.transition(with: window!, duration: duration, options: options, animations: {}, completion:
+        { completed in
+            // maybe do something on completion here
+        })
+    }
 
 }
 

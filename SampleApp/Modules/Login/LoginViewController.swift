@@ -17,10 +17,11 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        self.configureView()
+        self.configureUI()
     }
 
-    func configureView() {
+    //MARK:- Configure UI
+    func configureUI() {
         self.configureTextField()
         self.configureButton()
     }
@@ -37,8 +38,16 @@ class LoginViewController: UIViewController {
             self.loginButton.layer.borderColor = UIColor.white.cgColor
             self.loginButton.layer.borderWidth = 1.5
         }
-
     }
+    
+    //MARK:- Navigation
+    @IBAction func showDashboardView() {
+        let scene = UIApplication.shared.connectedScenes.first
+        if let sd : SceneDelegate = (scene?.delegate as? SceneDelegate) {
+            sd.showDashboard()
+        }        
+    }
+    
 
 }
 

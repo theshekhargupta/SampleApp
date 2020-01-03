@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 
 extension UIButton {
     func roundCorners(corners: UIRectCorner, radius: Int = 8) {
@@ -59,6 +60,19 @@ extension UITextField {
 
     @objc func doneButtonAction() {
         self.resignFirstResponder()
+    }
+}
+
+class RootViewController: UIViewController {
+}
+
+extension SceneDelegate {
+    static var shared: SceneDelegate {
+        return UIApplication.shared.delegate as! SceneDelegate
+    }
+    
+    var rootViewController: RootViewController {
+        return window!.rootViewController as! RootViewController
     }
 }
 
