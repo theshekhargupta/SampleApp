@@ -7,7 +7,7 @@ target 'SampleApp' do
 
   # Pods for SampleApp
   pod 'TextFieldEffects'
-
+  pod 'SlideMenuControllerSwift'
 
   target 'SampleAppTests' do
     inherit! :search_paths

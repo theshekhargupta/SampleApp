@@ -1,16 +1,20 @@
 PODS:
+  - SlideMenuControllerSwift (4.0.0)
   - TextFieldEffects (1.6.0)
 
 DEPENDENCIES:
+  - SlideMenuControllerSwift
   - TextFieldEffects
 
 SPEC REPOS:
   trunk:
+    - SlideMenuControllerSwift
     - TextFieldEffects
 
 SPEC CHECKSUMS:
+  SlideMenuControllerSwift: 021d6318201c53d4d4d3710517d43d6c556c7dd0
   TextFieldEffects: 529b8aff706fb40f82c41c780c0777941a893796
 
-PODFILE CHECKSUM: ff8f877964fe0ee9de93dcc6b78f82c12a81ae91
+PODFILE CHECKSUM: 5437948a856b2ef0caad5b17aad423ddf2771c4e
 
 COCOAPODS: 1.8.4

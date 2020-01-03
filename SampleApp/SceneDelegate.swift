@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SlideMenuControllerSwift
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -52,16 +53,20 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "DashboardViewController")
         let navigation = UINavigationController(rootViewController: vc)
-        self.window?.rootViewController = navigation
-        self.window?.makeKeyAndVisible()
+
+        let sm = storyboard.instantiateViewController(withIdentifier: "SlideMenuViewController")
+
+        let slideMenuController = SlideMenuController(mainViewController: navigation, leftMenuViewController: sm)
+
+        self.window?.rootViewController = slideMenuController
 
         // Animation
         let options: UIView.AnimationOptions = .transitionCrossDissolve
         let duration: TimeInterval = 0.3
-        UIView.transition(with: window!, duration: duration, options: options, animations: {}, completion:
-        { completed in
-            // maybe do something on completion here
-        })
+        UIView.transition(with: window!, duration: duration, options: options, animations: { }, completion:
+                    { completed in
+                    // maybe do something on completion here
+            })
     }
 
 }

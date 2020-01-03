@@ -112,5 +112,23 @@
             </objects>
             <point key="canvasLocation" x="2906" y="183"/>
         </scene>
+        <!--Slide Menu View Controller-->
+        <scene sceneID="EX3-xQ-LLU">
+            <objects>
+                <viewController storyboardIdentifier="SlideMenuViewController" id="8DE-Ia-sM6" customClass="SlideMenuViewController" customModule="SampleApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wm5-ao-6cc"/>
+                        <viewControllerLayoutGuide type="bottom" id="UZF-qp-xbR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RA6-wE-wf2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gL4-Ef-e03" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3729" y="183"/>
+        </scene>
     </scenes>
 </document>
