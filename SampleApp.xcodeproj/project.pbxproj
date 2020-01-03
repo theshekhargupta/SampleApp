@@ -138,6 +138,29 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		D35E3FCA23BF7050009A5BAE /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				D35E3FCB23BF7050009A5BAE /* Images */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		D35E3FCB23BF7050009A5BAE /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				D35E3FCC23BF7050009A5BAE /* Icons */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		D35E3FCC23BF7050009A5BAE /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Icons;
+			sourceTree = "<group>";
+		};
 		D3B3CE1D23BEFA0300D7D6C6 = {
 			isa = PBXGroup;
 			children = (
@@ -163,6 +186,7 @@
 		D3B3CE2823BEFA0300D7D6C6 /* SampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				D35E3FCA23BF7050009A5BAE /* Resource */,
 				D3E258B623BF04AB0059658B /* Commom */,
 				D3B3CE2923BEFA0300D7D6C6 /* AppDelegate.swift */,
 				D3B3CE2B23BEFA0300D7D6C6 /* SceneDelegate.swift */,
