@@ -10,6 +10,8 @@ import UIKit
 
 class DashboardViewController: UIViewController {
     
+    @IBOutlet var tncView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -17,8 +19,10 @@ class DashboardViewController: UIViewController {
     }
     
     func configureUI() {
+        self.navigationItem.title = "UE DEMO"
         self.configureNavigationBar()
         self.addBackButton()
+//        self.configureTableAndCollectionView()
     }
     
     func configureNavigationBar() {
@@ -28,13 +32,18 @@ class DashboardViewController: UIViewController {
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: burgerMenuIcon)
     }
     
+    func configureTableAndCollectionView() {
+        let viewController = DHCollectionTableViewController(source: dataArray as Array<AnyObject>)
+        self.tncView.addSubview(viewController.view)
+    }
+    
+    //MARK:- User Action
     func addBackButton() {
         let backButton = UIButton(type: .custom)
         backButton.setImage(UIImage(named: "burgerMenu.png"), for: .normal) // Image can be downloaded from here below link
-        backButton.setTitle("Menu", for: .normal)
+//        backButton.setTitle("Menu", for: .normal)
         backButton.setTitleColor(backButton.tintColor, for: .normal) // You can change the TitleColor
         backButton.addTarget(self, action: #selector(self.showSlideMenu), for: .touchUpInside)
-
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: backButton)
     }
 
