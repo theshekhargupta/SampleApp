@@ -49,7 +49,21 @@ let dataArray: Array<Any> = [
         ["label": "Profile Setting", "image":IMAGES.profileSetting],
         ["label": "Tab Activity", "image":IMAGES.profileSetting]
     ],
+]
 
+let sideMenuArray = [
+    "Home",
+    "Profile",
+    "Recharge",
+    "Bill Pay",
+    "Send Money",
+    "Manage Beneficiary",
+    "Request Money",
+    "Notification",
+    "Offer",
+    "Transaction History",
+    "Help",
+    "Sign Out"
 ]
 
 struct SCREEN_SIZE { // Answer to OP's question
