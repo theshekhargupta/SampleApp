@@ -14,6 +14,9 @@
 		D3346D0723BF162A00865C2F /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3346D0623BF162A00865C2F /* DashboardViewController.swift */; };
 		D3346D0923BF18F800865C2F /* UINavigationController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3346D0823BF18F800865C2F /* UINavigationController+Extension.swift */; };
 		D375BFD223C39FD9002EF07B /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D375BFD123C39FD9002EF07B /* TableViewCell.swift */; };
+		D37A7EEE23C486C600CC7B0E /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37A7EED23C486C600CC7B0E /* TabViewController.swift */; };
+		D37A7EF123C486F200CC7B0E /* ComingSoonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37A7EF023C486F200CC7B0E /* ComingSoonViewController.swift */; };
+		D37A7EF323C48DAC00CC7B0E /* goToHome.png in Resources */ = {isa = PBXBuildFile; fileRef = D37A7EF223C48DAC00CC7B0E /* goToHome.png */; };
 		D3B3CE2A23BEFA0300D7D6C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B3CE2923BEFA0300D7D6C6 /* AppDelegate.swift */; };
 		D3B3CE2C23BEFA0300D7D6C6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B3CE2B23BEFA0300D7D6C6 /* SceneDelegate.swift */; };
 		D3B3CE3123BEFA0300D7D6C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3B3CE2F23BEFA0300D7D6C6 /* Main.storyboard */; };
@@ -81,6 +84,9 @@
 		D3346D0623BF162A00865C2F /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		D3346D0823BF18F800865C2F /* UINavigationController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extension.swift"; sourceTree = "<group>"; };
 		D375BFD123C39FD9002EF07B /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		D37A7EED23C486C600CC7B0E /* TabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
+		D37A7EF023C486F200CC7B0E /* ComingSoonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComingSoonViewController.swift; sourceTree = "<group>"; };
+		D37A7EF223C48DAC00CC7B0E /* goToHome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = goToHome.png; sourceTree = "<group>"; };
 		D3B3CE2623BEFA0300D7D6C6 /* SampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3B3CE2923BEFA0300D7D6C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3B3CE2B23BEFA0300D7D6C6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -166,6 +172,8 @@
 		D3346D0123BF160600865C2F /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				D37A7EEF23C486DF00CC7B0E /* Coming Soon */,
+				D37A7EEC23C486C600CC7B0E /* TabView */,
 				D3DD49C223BF5CB2007A20D1 /* Slide Menu */,
 				D3346D0323BF160600865C2F /* Login */,
 				D3346D0223BF160600865C2F /* DashBoard */,
@@ -210,6 +218,7 @@
 		D35E3FCC23BF7050009A5BAE /* Icons */ = {
 			isa = PBXGroup;
 			children = (
+				D37A7EF223C48DAC00CC7B0E /* goToHome.png */,
 				D3E3758F23C3432D0060CBAF /* addButton.png */,
 				D3E3759223C3432D0060CBAF /* addNewButton.png */,
 				D3E3759923C3432E0060CBAF /* billPayButton.png */,
@@ -236,6 +245,22 @@
 				D3E3759C23C3432E0060CBAF /* wallet.png */,
 			);
 			path = Icons;
+			sourceTree = "<group>";
+		};
+		D37A7EEC23C486C600CC7B0E /* TabView */ = {
+			isa = PBXGroup;
+			children = (
+				D37A7EED23C486C600CC7B0E /* TabViewController.swift */,
+			);
+			path = TabView;
+			sourceTree = "<group>";
+		};
+		D37A7EEF23C486DF00CC7B0E /* Coming Soon */ = {
+			isa = PBXGroup;
+			children = (
+				D37A7EF023C486F200CC7B0E /* ComingSoonViewController.swift */,
+			);
+			path = "Coming Soon";
 			sourceTree = "<group>";
 		};
 		D3B3CE1D23BEFA0300D7D6C6 = {
@@ -447,6 +472,7 @@
 				D3E375B523C3432F0060CBAF /* hotel.png in Resources */,
 				D3E375AF23C3432F0060CBAF /* cab.png in Resources */,
 				D3E375AC23C3432F0060CBAF /* mobileTopup.png in Resources */,
+				D37A7EF323C48DAC00CC7B0E /* goToHome.png in Resources */,
 				D3E375A823C3432F0060CBAF /* confirmation.png in Resources */,
 				D3B3CE3623BEFA0900D7D6C6 /* LaunchScreen.storyboard in Resources */,
 				D3E375A623C3432F0060CBAF /* electricityBill.png in Resources */,
@@ -600,8 +626,10 @@
 				D3346D0523BF160700865C2F /* LoginViewController.swift in Sources */,
 				D3E258B923BF04B60059658B /* Extension.swift in Sources */,
 				D3346D0723BF162A00865C2F /* DashboardViewController.swift in Sources */,
+				D37A7EF123C486F200CC7B0E /* ComingSoonViewController.swift in Sources */,
 				D3B3CE2A23BEFA0300D7D6C6 /* AppDelegate.swift in Sources */,
 				D3DD49C423BF5DD0007A20D1 /* SlideMenuViewController.swift in Sources */,
+				D37A7EEE23C486C600CC7B0E /* TabViewController.swift in Sources */,
 				D3346D0923BF18F800865C2F /* UINavigationController+Extension.swift in Sources */,
 				D3B3CE2C23BEFA0300D7D6C6 /* SceneDelegate.swift in Sources */,
 				D375BFD223C39FD9002EF07B /* TableViewCell.swift in Sources */,

@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct IMAGES {
+struct APP_IMAGES {
     static let payToMerchant = "payMerchant.png"
     static let sendMoney = "sendMoney.png"
     static let mobileTopup = "mobileTopup.png"
@@ -28,26 +28,26 @@ struct IMAGES {
 
 let dataArray: Array<Any> = [
     [
-        ["label": "Pay to Merchant", "image":IMAGES.payToMerchant],
-        ["label": "Send Money", "image":IMAGES.sendMoney]
+        ["label": "Pay to Merchant", "image":APP_IMAGES.payToMerchant],
+        ["label": "Send Money", "image":APP_IMAGES.sendMoney]
     ],
     [
-        ["label": "Mobile Top-up", "image":IMAGES.mobileTopup],
-        ["label": "Mobile Bill Pay", "image":IMAGES.mobileBillPay],
-        ["label": "Electric Bill", "image":IMAGES.electricityBill]
+        ["label": "Mobile Top-up", "image":APP_IMAGES.mobileTopup],
+        ["label": "Mobile Bill Pay", "image":APP_IMAGES.mobileBillPay],
+        ["label": "Electric Bill", "image":APP_IMAGES.electricityBill]
     ],
     [
-        ["label": "Hotel", "image":IMAGES.hotel],
-        ["label": "Cab", "image":IMAGES.cab],
-        ["label": "Flight", "image":IMAGES.flight],
-        ["label": "Train", "image":IMAGES.train],
-        ["label": "Bus", "image":IMAGES.bus],
-        ["label": "Movie", "image":IMAGES.movie],
-        ["label": "Sports", "image":IMAGES.sports],
+        ["label": "Hotel", "image":APP_IMAGES.hotel],
+        ["label": "Cab", "image":APP_IMAGES.cab],
+        ["label": "Flight", "image":APP_IMAGES.flight],
+        ["label": "Train", "image":APP_IMAGES.train],
+        ["label": "Bus", "image":APP_IMAGES.bus],
+        ["label": "Movie", "image":APP_IMAGES.movie],
+        ["label": "Sports", "image":APP_IMAGES.sports],
     ],
     [
-        ["label": "Profile Setting", "image":IMAGES.profileSetting],
-        ["label": "Tab Activity", "image":IMAGES.profileSetting]
+        ["label": "Profile Setting", "image":APP_IMAGES.profileSetting],
+        ["label": "Tab Activity", "image":APP_IMAGES.profileSetting]
     ],
 ]
 

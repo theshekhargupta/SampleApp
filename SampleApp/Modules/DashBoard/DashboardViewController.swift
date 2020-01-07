@@ -8,9 +8,11 @@
 
 import UIKit
 
-class DashboardViewController: UIViewController {
+class DashboardViewController: UIViewController, UIScrollViewDelegate {
     
     @IBOutlet var tableview: UITableView!
+    @IBOutlet var scrollView: UIScrollView!
+    
     var model = dataArray as Array<AnyObject>
     var storedOffsets = [Int: CGFloat]()
     
@@ -23,6 +25,7 @@ class DashboardViewController: UIViewController {
         self.navigationItem.title = "UE DEMO"
         self.configureNavigationBar()
         self.addBackButton()
+        self.configureScrollView()
     }
     
     func configureNavigationBar() {
@@ -38,6 +41,11 @@ class DashboardViewController: UIViewController {
         backButton.setTitleColor(backButton.tintColor, for: .normal)
         backButton.addTarget(self, action: #selector(self.showSlideMenu), for: .touchUpInside)
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: backButton)
+    }
+    
+    func configureScrollView() {
+        self.scrollView.contentSize = CGSize(width: self.scrollView.frame.size.width * 2,
+                                             height: self.scrollView.frame.size.height)
     }
         
     //MARK:- User Action
@@ -108,11 +116,12 @@ extension DashboardViewController: UICollectionViewDelegate, UICollectionViewDat
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print("Collection view at row \(collectionView.tag) selected index path \(indexPath)")
+        self.manageNavigation(collectionView.tag, index: indexPath.row)
     }
     
     func createLabel(_ textValue: String, cell: UICollectionViewCell) -> UILabel {
         let dynamicLabel: UILabel = UILabel(frame: CGRect(x: 0,
-                                                          y: cell.frame.height - 25,
+                                                          y: cell.frame.height - 35,
                                                           width: SCREEN_SIZE.SCREEN_WIDTH/2,
                                                           height: 20))
         dynamicLabel.textColor = .systemBlue
@@ -126,19 +135,126 @@ extension DashboardViewController: UICollectionViewDelegate, UICollectionViewDat
         let image = UIImage(named: imageName)
         let imageView = UIImageView(image: image)
         imageView.frame =  CGRect(x: 0,
-                                 y: 20,
+                                 y: 30,
                                  width: SCREEN_SIZE.SCREEN_WIDTH/2,
-                                 height: cell.frame.height - 70)
+                                 height: cell.frame.height - 80)
         imageView.contentMode = .scaleAspectFit
 
         return imageView
     }
+    
 }
 
 extension DashboardViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: SCREEN_SIZE.SCREEN_WIDTH/2,
                       height: SCREEN_SIZE.SCREEN_HEIGHT/5.6)
+    }
+}
+
+
+extension DashboardViewController {
+    func manageNavigation(_ row: Int, index:Int) {
+        switch row {
+        case 0:
+            self.handleTransactions(index)
+        case 1:
+            self.handleBillPayament(index)
+        case 2:
+            self.handleBooking(index)
+        case 3:
+            self.handleProfile(index)
+        default:
+            break
+        }
+
+    }
+    
+    func handleTransactions(_ index: Int) {
+        switch index {
+        case 0:
+            print("pay to merchant")
+            break
+        case 1:
+            print("send Money")
+            break
+        default:
+            break
+        }
+    }
+    
+    func handleBillPayament(_ index: Int) {
+        switch index {
+        case 0:
+            print("Mobile topup")
+            break
+        case 1:
+            print("Mobile Bill payment")
+            break
+        case 2:
+            print("Electricity Bill payment")
+            break
+        default:
+            break
+        }
+    }
+    
+    func handleBooking(_ index: Int) {
+//        var selectedItem = ""
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "ComingSoonViewController") as! ComingSoonViewController
+        
+        switch index {
+        case 0:
+            print("Hotel")
+            vc.selectedView = SelectedItem.hotel.rawValue
+            break
+        case 1:
+            print("cab")
+            vc.selectedView = SelectedItem.cab.rawValue
+            break
+        case 2:
+            print("flight")
+            vc.selectedView = SelectedItem.flight.rawValue
+            break
+        case 3:
+            print("train")
+            vc.selectedView = SelectedItem.train.rawValue
+            break
+        case 4:
+            print("Bus")
+            vc.selectedView = SelectedItem.bus.rawValue
+            break
+        case 5:
+            print("Movie")
+            break
+        case 6:
+            print("Sports")
+            break
+        default:
+            break
+        }
+        self.navigationController?.push(vc, animated: true)
+    }
+    
+    func handleProfile(_ index: Int) {
+        switch index {
+        case 0:
+            print("Profile Seeting")
+            break
+        case 1:
+            print("Tab Activity")
+            self.showTabViewController()
+            break
+        default:
+            break
+        }
+    }
+    
+    func showTabViewController() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "TabViewController")
+        self.navigationController?.push(vc, animated: true)
     }
 }
 
