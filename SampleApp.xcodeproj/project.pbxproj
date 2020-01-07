@@ -13,6 +13,7 @@
 		D3346D0523BF160700865C2F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3346D0423BF160600865C2F /* LoginViewController.swift */; };
 		D3346D0723BF162A00865C2F /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3346D0623BF162A00865C2F /* DashboardViewController.swift */; };
 		D3346D0923BF18F800865C2F /* UINavigationController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3346D0823BF18F800865C2F /* UINavigationController+Extension.swift */; };
+		D375BFD223C39FD9002EF07B /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D375BFD123C39FD9002EF07B /* TableViewCell.swift */; };
 		D3B3CE2A23BEFA0300D7D6C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B3CE2923BEFA0300D7D6C6 /* AppDelegate.swift */; };
 		D3B3CE2C23BEFA0300D7D6C6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B3CE2B23BEFA0300D7D6C6 /* SceneDelegate.swift */; };
 		D3B3CE3123BEFA0300D7D6C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3B3CE2F23BEFA0300D7D6C6 /* Main.storyboard */; };
@@ -47,8 +48,6 @@
 		D3E375B823C3432F0060CBAF /* calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = D3E375A023C3432E0060CBAF /* calendar.png */; };
 		D3E375B923C3432F0060CBAF /* sports.png in Resources */ = {isa = PBXBuildFile; fileRef = D3E375A123C3432F0060CBAF /* sports.png */; };
 		D3E375BA23C3432F0060CBAF /* mobileBillTemplate.png in Resources */ = {isa = PBXBuildFile; fileRef = D3E375A223C3432F0060CBAF /* mobileBillTemplate.png */; };
-		D3E375BE23C343350060CBAF /* DHCollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E375BC23C343350060CBAF /* DHCollectionTableViewCell.swift */; };
-		D3E375BF23C343350060CBAF /* DHCollectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E375BD23C343350060CBAF /* DHCollectionTableViewController.swift */; };
 		D3E375C123C343410060CBAF /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E375C023C343410060CBAF /* Const.swift */; };
 /* End PBXBuildFile section */
 
@@ -81,6 +80,7 @@
 		D3346D0423BF160600865C2F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D3346D0623BF162A00865C2F /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		D3346D0823BF18F800865C2F /* UINavigationController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extension.swift"; sourceTree = "<group>"; };
+		D375BFD123C39FD9002EF07B /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		D3B3CE2623BEFA0300D7D6C6 /* SampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3B3CE2923BEFA0300D7D6C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3B3CE2B23BEFA0300D7D6C6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -121,8 +121,6 @@
 		D3E375A023C3432E0060CBAF /* calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar.png; sourceTree = "<group>"; };
 		D3E375A123C3432F0060CBAF /* sports.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sports.png; sourceTree = "<group>"; };
 		D3E375A223C3432F0060CBAF /* mobileBillTemplate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mobileBillTemplate.png; sourceTree = "<group>"; };
-		D3E375BC23C343350060CBAF /* DHCollectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DHCollectionTableViewCell.swift; sourceTree = "<group>"; };
-		D3E375BD23C343350060CBAF /* DHCollectionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DHCollectionTableViewController.swift; sourceTree = "<group>"; };
 		D3E375C023C343410060CBAF /* Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		EDE1D2E783DA8975A32276D3 /* Pods-SampleAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleAppTests.release.xcconfig"; path = "Target Support Files/Pods-SampleAppTests/Pods-SampleAppTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -178,7 +176,7 @@
 		D3346D0223BF160600865C2F /* DashBoard */ = {
 			isa = PBXGroup;
 			children = (
-				D3E375BB23C343350060CBAF /* table and collectionView */,
+				D375BFD123C39FD9002EF07B /* TableViewCell.swift */,
 				D3346D0623BF162A00865C2F /* DashboardViewController.swift */,
 				D3DD49BF23BF3F4F007A20D1 /* DetailedViewController.swift */,
 			);
@@ -320,15 +318,6 @@
 				D3346D0823BF18F800865C2F /* UINavigationController+Extension.swift */,
 			);
 			path = Extensions;
-			sourceTree = "<group>";
-		};
-		D3E375BB23C343350060CBAF /* table and collectionView */ = {
-			isa = PBXGroup;
-			children = (
-				D3E375BD23C343350060CBAF /* DHCollectionTableViewController.swift */,
-				D3E375BC23C343350060CBAF /* DHCollectionTableViewCell.swift */,
-			);
-			path = "table and collectionView";
 			sourceTree = "<group>";
 		};
 		E7CE7DE102E0906904021965 /* Pods */ = {
@@ -614,9 +603,8 @@
 				D3B3CE2A23BEFA0300D7D6C6 /* AppDelegate.swift in Sources */,
 				D3DD49C423BF5DD0007A20D1 /* SlideMenuViewController.swift in Sources */,
 				D3346D0923BF18F800865C2F /* UINavigationController+Extension.swift in Sources */,
-				D3E375BE23C343350060CBAF /* DHCollectionTableViewCell.swift in Sources */,
 				D3B3CE2C23BEFA0300D7D6C6 /* SceneDelegate.swift in Sources */,
-				D3E375BF23C343350060CBAF /* DHCollectionTableViewController.swift in Sources */,
+				D375BFD223C39FD9002EF07B /* TableViewCell.swift in Sources */,
 				D3E375C123C343410060CBAF /* Const.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
