@@ -17,6 +17,7 @@
 		D37A7EEE23C486C600CC7B0E /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37A7EED23C486C600CC7B0E /* TabViewController.swift */; };
 		D37A7EF123C486F200CC7B0E /* ComingSoonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37A7EF023C486F200CC7B0E /* ComingSoonViewController.swift */; };
 		D37A7EF323C48DAC00CC7B0E /* goToHome.png in Resources */ = {isa = PBXBuildFile; fileRef = D37A7EF223C48DAC00CC7B0E /* goToHome.png */; };
+		D37A7EF623C4AA8F00CC7B0E /* PayToMerchantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37A7EF523C4AA8F00CC7B0E /* PayToMerchantViewController.swift */; };
 		D3B3CE2A23BEFA0300D7D6C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B3CE2923BEFA0300D7D6C6 /* AppDelegate.swift */; };
 		D3B3CE2C23BEFA0300D7D6C6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B3CE2B23BEFA0300D7D6C6 /* SceneDelegate.swift */; };
 		D3B3CE3123BEFA0300D7D6C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3B3CE2F23BEFA0300D7D6C6 /* Main.storyboard */; };
@@ -87,6 +88,7 @@
 		D37A7EED23C486C600CC7B0E /* TabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 		D37A7EF023C486F200CC7B0E /* ComingSoonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComingSoonViewController.swift; sourceTree = "<group>"; };
 		D37A7EF223C48DAC00CC7B0E /* goToHome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = goToHome.png; sourceTree = "<group>"; };
+		D37A7EF523C4AA8F00CC7B0E /* PayToMerchantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayToMerchantViewController.swift; sourceTree = "<group>"; };
 		D3B3CE2623BEFA0300D7D6C6 /* SampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3B3CE2923BEFA0300D7D6C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3B3CE2B23BEFA0300D7D6C6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -172,8 +174,6 @@
 		D3346D0123BF160600865C2F /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				D37A7EEF23C486DF00CC7B0E /* Coming Soon */,
-				D37A7EEC23C486C600CC7B0E /* TabView */,
 				D3DD49C223BF5CB2007A20D1 /* Slide Menu */,
 				D3346D0323BF160600865C2F /* Login */,
 				D3346D0223BF160600865C2F /* DashBoard */,
@@ -184,6 +184,9 @@
 		D3346D0223BF160600865C2F /* DashBoard */ = {
 			isa = PBXGroup;
 			children = (
+				D37A7EF423C4AA7F00CC7B0E /* PayToMerchant */,
+				D37A7EEF23C486DF00CC7B0E /* Coming Soon */,
+				D37A7EEC23C486C600CC7B0E /* TabView */,
 				D375BFD123C39FD9002EF07B /* TableViewCell.swift */,
 				D3346D0623BF162A00865C2F /* DashboardViewController.swift */,
 				D3DD49BF23BF3F4F007A20D1 /* DetailedViewController.swift */,
@@ -261,6 +264,14 @@
 				D37A7EF023C486F200CC7B0E /* ComingSoonViewController.swift */,
 			);
 			path = "Coming Soon";
+			sourceTree = "<group>";
+		};
+		D37A7EF423C4AA7F00CC7B0E /* PayToMerchant */ = {
+			isa = PBXGroup;
+			children = (
+				D37A7EF523C4AA8F00CC7B0E /* PayToMerchantViewController.swift */,
+			);
+			path = PayToMerchant;
 			sourceTree = "<group>";
 		};
 		D3B3CE1D23BEFA0300D7D6C6 = {
@@ -624,6 +635,7 @@
 			files = (
 				D3DD49C023BF3F4F007A20D1 /* DetailedViewController.swift in Sources */,
 				D3346D0523BF160700865C2F /* LoginViewController.swift in Sources */,
+				D37A7EF623C4AA8F00CC7B0E /* PayToMerchantViewController.swift in Sources */,
 				D3E258B923BF04B60059658B /* Extension.swift in Sources */,
 				D3346D0723BF162A00865C2F /* DashboardViewController.swift in Sources */,
 				D37A7EF123C486F200CC7B0E /* ComingSoonViewController.swift in Sources */,

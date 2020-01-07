@@ -24,6 +24,7 @@ class ComingSoonViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = "Coming Soon"
         self.configureUI(selectedView)
     }
 

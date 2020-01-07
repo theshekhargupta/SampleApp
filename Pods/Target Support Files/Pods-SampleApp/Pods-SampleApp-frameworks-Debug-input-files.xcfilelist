@@ -1,3 +1,5 @@
 ${PODS_ROOT}/Target Support Files/Pods-SampleApp/Pods-SampleApp-frameworks.sh
+${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework
 ${BUILT_PRODUCTS_DIR}/SlideMenuControllerSwift/SlideMenuControllerSwift.framework
+${BUILT_PRODUCTS_DIR}/TZSegmentedControl/TZSegmentedControl.framework
 ${BUILT_PRODUCTS_DIR}/TextFieldEffects/TextFieldEffects.framework

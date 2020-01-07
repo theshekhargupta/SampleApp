@@ -1,5 +1,5 @@
 //
-//  TabViewController.swift
+//  PayToMerchantViewController.swift
 //  SampleApp
 //
 //  Created by Shekhar Gupta on 07/01/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TabViewController: UIViewController {
+class PayToMerchantViewController: UIViewController {
     
     
     override func viewDidLoad() {
@@ -19,6 +19,7 @@ class TabViewController: UIViewController {
 
     //MARK:- Configure UI
     func configureUI() {
+        self.navigationItem.title = "Pay to Merchant"
         
     }
     

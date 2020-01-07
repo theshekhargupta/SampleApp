@@ -63,7 +63,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="930" y="183"/>
+            <point key="canvasLocation" x="262" y="181"/>
         </scene>
         <!--Dashboard View Controller-->
         <scene sceneID="AZA-b8-Yy6">
@@ -212,7 +212,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="csO-OK-d0L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1967" y="873"/>
+            <point key="canvasLocation" x="2764" y="1598"/>
         </scene>
         <!--Coming Soon View Controller-->
         <scene sceneID="Z31-dv-NLb">
@@ -253,6 +253,21 @@
             </objects>
             <point key="canvasLocation" x="2764" y="871.21439280359823"/>
         </scene>
+        <!--Pay To Merchant View Controller-->
+        <scene sceneID="q6H-Ly-Kx2">
+            <objects>
+                <viewController storyboardIdentifier="PayToMerchantViewController" id="Pwt-oV-qJS" customClass="PayToMerchantViewController" customModule="SampleApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9bh-I6-1uw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="0ce-wi-W2y"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gJF-hw-7M0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2764" y="-537"/>
+        </scene>
         <!--Detailed View Controller-->
         <scene sceneID="qfO-vL-9fN">
             <objects>
@@ -281,7 +296,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gL4-Ef-e03" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3729" y="183"/>
+            <point key="canvasLocation" x="1126" y="180"/>
         </scene>
     </scenes>
     <resources>

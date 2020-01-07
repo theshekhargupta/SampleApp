@@ -102,7 +102,7 @@ extension DashboardViewController: UICollectionViewDelegate, UICollectionViewDat
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath)
         let collectionViewArray = model[collectionView.tag] as! Array<AnyObject>
         let rowData: Dictionary<String, String> = collectionViewArray[indexPath.row] as! Dictionary<String, String>
-
+        
         if let labelValue = rowData["label"] {
             cell.addSubview(self.createLabel(labelValue, cell: cell))
         }
@@ -174,9 +174,11 @@ extension DashboardViewController {
         switch index {
         case 0:
             print("pay to merchant")
+            self.navigateToViewController(vc: "PayToMerchantViewController")
             break
         case 1:
             print("send Money")
+            fatalError()
             break
         default:
             break
@@ -200,10 +202,8 @@ extension DashboardViewController {
     }
     
     func handleBooking(_ index: Int) {
-//        var selectedItem = ""
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "ComingSoonViewController") as! ComingSoonViewController
-        
         switch index {
         case 0:
             print("Hotel")
@@ -232,9 +232,11 @@ extension DashboardViewController {
             print("Sports")
             break
         default:
-            break
+            return
         }
-        self.navigationController?.push(vc, animated: true)
+        if vc.selectedView != "" {
+            self.navigationController?.push(vc, animated: true)
+        }
     }
     
     func handleProfile(_ index: Int) {
@@ -244,16 +246,16 @@ extension DashboardViewController {
             break
         case 1:
             print("Tab Activity")
-            self.showTabViewController()
+            self.navigateToViewController(vc: "TabViewController")
             break
         default:
             break
         }
     }
-    
-    func showTabViewController() {
+        
+    func navigateToViewController(vc: String) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "TabViewController")
+        let vc = storyboard.instantiateViewController(withIdentifier: vc)
         self.navigationController?.push(vc, animated: true)
     }
 }

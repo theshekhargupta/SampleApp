@@ -9,6 +9,7 @@ target 'SampleApp' do
   pod 'TextFieldEffects'
   pod 'SlideMenuControllerSwift'
   pod 'NVActivityIndicatorView'
+  pod "TZSegmentedControl"
 
   target 'SampleAppTests' do
     inherit! :search_paths
