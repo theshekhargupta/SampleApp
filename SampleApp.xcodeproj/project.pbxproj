@@ -18,6 +18,7 @@
 		D37A7EF123C486F200CC7B0E /* ComingSoonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37A7EF023C486F200CC7B0E /* ComingSoonViewController.swift */; };
 		D37A7EF323C48DAC00CC7B0E /* goToHome.png in Resources */ = {isa = PBXBuildFile; fileRef = D37A7EF223C48DAC00CC7B0E /* goToHome.png */; };
 		D37A7EF623C4AA8F00CC7B0E /* PayToMerchantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37A7EF523C4AA8F00CC7B0E /* PayToMerchantViewController.swift */; };
+		D37A7EF823C4B59400CC7B0E /* QR-code.png in Resources */ = {isa = PBXBuildFile; fileRef = D37A7EF723C4B59300CC7B0E /* QR-code.png */; };
 		D3B3CE2A23BEFA0300D7D6C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B3CE2923BEFA0300D7D6C6 /* AppDelegate.swift */; };
 		D3B3CE2C23BEFA0300D7D6C6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B3CE2B23BEFA0300D7D6C6 /* SceneDelegate.swift */; };
 		D3B3CE3123BEFA0300D7D6C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3B3CE2F23BEFA0300D7D6C6 /* Main.storyboard */; };
@@ -89,6 +90,7 @@
 		D37A7EF023C486F200CC7B0E /* ComingSoonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComingSoonViewController.swift; sourceTree = "<group>"; };
 		D37A7EF223C48DAC00CC7B0E /* goToHome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = goToHome.png; sourceTree = "<group>"; };
 		D37A7EF523C4AA8F00CC7B0E /* PayToMerchantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayToMerchantViewController.swift; sourceTree = "<group>"; };
+		D37A7EF723C4B59300CC7B0E /* QR-code.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QR-code.png"; sourceTree = "<group>"; };
 		D3B3CE2623BEFA0300D7D6C6 /* SampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3B3CE2923BEFA0300D7D6C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3B3CE2B23BEFA0300D7D6C6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -213,6 +215,7 @@
 		D35E3FCB23BF7050009A5BAE /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				D37A7EF723C4B59300CC7B0E /* QR-code.png */,
 				D35E3FCC23BF7050009A5BAE /* Icons */,
 			);
 			path = Images;
@@ -501,6 +504,7 @@
 				D3E375A923C3432F0060CBAF /* payMerchant.png in Resources */,
 				D3E375B123C3432F0060CBAF /* billPayButton.png in Resources */,
 				D3E375B623C3432F0060CBAF /* sendMoney.png in Resources */,
+				D37A7EF823C4B59400CC7B0E /* QR-code.png in Resources */,
 				D3E375B723C3432F0060CBAF /* burgerMenu.png in Resources */,
 				D3E375BA23C3432F0060CBAF /* mobileBillTemplate.png in Resources */,
 				D3E375AA23C3432F0060CBAF /* addNewButton.png in Resources */,
