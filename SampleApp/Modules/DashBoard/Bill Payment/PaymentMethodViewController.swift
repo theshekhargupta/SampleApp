@@ -1,5 +1,5 @@
 //
-//  BillPaymentViewController.swift
+//  PaymentMethodViewController.swift
 //  SampleApp
 //
 //  Created by Shekhar Gupta on 08/01/20.
@@ -8,46 +8,44 @@
 
 import UIKit
 
-enum BillPaymentItems: String {
-    case MobileTopup = "Mobile Topup"
-    case MobileBillPayment = "Mobile Bill Pay"
-    case ElectricityBillPayment = "Electricity Bill Pay"
-}
-
-class BillPaymentViewController: UIViewController {
+class PaymentMethodViewController: UIViewController {
     var selectedItem = ""
-    @IBOutlet var nextButton: UIButton!
+    @IBOutlet var imageView: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         self.configureUI()
     }
 
-//MARK:- Configure UI
+
+    //MARK:- Configure UI
     func configureUI() {
-        let selectedItem =  BillPaymentItems(rawValue: self.selectedItem)
+        var currentImage = ""
+        let selectedItem = BillPaymentItems(rawValue: self.selectedItem)
         switch selectedItem {
         case .MobileTopup:
+            currentImage = APP_IMAGES.paymentMethodMobile
             self.navigationItem.title = BillPaymentItems.MobileTopup.rawValue
             break
-        case .MobileBillPayment:
-            self.navigationItem.title = BillPaymentItems.MobileBillPayment.rawValue
-            break
         case .ElectricityBillPayment:
+            currentImage = APP_IMAGES.paymentMethodElectricity
             self.navigationItem.title = BillPaymentItems.ElectricityBillPayment.rawValue
             break
         default:
             print("Case Default")
             break
         }
+        let selectedImage = UIImage(named: currentImage)
+        self.imageView.image = selectedImage
+
     }
-    
-// MARK:- Action
-    @IBAction func nextButtonAction() {
+
+    // MARK:- Action
+    @IBAction func payButtonAction() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "PaymentMethodViewController") as! PaymentMethodViewController
-        let selectedItem =  BillPaymentItems(rawValue: self.selectedItem)
+        let vc = storyboard.instantiateViewController(withIdentifier: "ReceiptViewController") as! ReceiptViewController
+
+        let selectedItem = BillPaymentItems(rawValue: self.selectedItem)
         switch selectedItem {
         case .MobileTopup:
             vc.selectedItem = BillPaymentItems.MobileTopup.rawValue
@@ -59,9 +57,11 @@ class BillPaymentViewController: UIViewController {
             print("Case Default")
             break
         }
-        
         if vc.selectedItem != "" {
             self.navigationController?.push(vc, animated: true)
         }
     }
+
 }
+
+

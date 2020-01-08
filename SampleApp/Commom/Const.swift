@@ -23,6 +23,10 @@ struct APP_IMAGES {
     static let sports = "sports.png"
     static let profileSetting = "profileSetting.png"
     static let tabActivity = "profileSetting.png"
+    static let paymentMethodMobile = "paymentModeMobile.png"
+    static let paymentMethodElectricity = "paymentModeElectricity.png"
+    static let mobileBill = "mobileReceipt.png"
+    static let electricBill = "electricityReceipt.png"
 }
 
 

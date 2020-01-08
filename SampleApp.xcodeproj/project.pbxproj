@@ -20,6 +20,13 @@
 		D37A7EF323C48DAC00CC7B0E /* goToHome.png in Resources */ = {isa = PBXBuildFile; fileRef = D37A7EF223C48DAC00CC7B0E /* goToHome.png */; };
 		D37A7EF623C4AA8F00CC7B0E /* PayToMerchantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37A7EF523C4AA8F00CC7B0E /* PayToMerchantViewController.swift */; };
 		D37A7EF823C4B59400CC7B0E /* QR-code.png in Resources */ = {isa = PBXBuildFile; fileRef = D37A7EF723C4B59300CC7B0E /* QR-code.png */; };
+		D37A8FA223C5C97C00222B14 /* SAUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37A8FA123C5C97C00222B14 /* SAUIButton.swift */; };
+		D37A8FA423C5CB9600222B14 /* PaymentMethodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37A8FA323C5CB9600222B14 /* PaymentMethodViewController.swift */; };
+		D37A8FA623C5CBAA00222B14 /* ReceiptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37A8FA523C5CBAA00222B14 /* ReceiptViewController.swift */; };
+		D37A8FA923C5E18800222B14 /* mobileReceipt.png in Resources */ = {isa = PBXBuildFile; fileRef = D37A8FA723C5E18800222B14 /* mobileReceipt.png */; };
+		D37A8FAA23C5E18800222B14 /* electricityReceipt.png in Resources */ = {isa = PBXBuildFile; fileRef = D37A8FA823C5E18800222B14 /* electricityReceipt.png */; };
+		D37A8FAD23C5E4F600222B14 /* paymentModeMobile.png in Resources */ = {isa = PBXBuildFile; fileRef = D37A8FAB23C5E4F500222B14 /* paymentModeMobile.png */; };
+		D37A8FAE23C5E4F600222B14 /* paymentModeElectricity.png in Resources */ = {isa = PBXBuildFile; fileRef = D37A8FAC23C5E4F600222B14 /* paymentModeElectricity.png */; };
 		D3B3CE2A23BEFA0300D7D6C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B3CE2923BEFA0300D7D6C6 /* AppDelegate.swift */; };
 		D3B3CE2C23BEFA0300D7D6C6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B3CE2B23BEFA0300D7D6C6 /* SceneDelegate.swift */; };
 		D3B3CE3123BEFA0300D7D6C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3B3CE2F23BEFA0300D7D6C6 /* Main.storyboard */; };
@@ -92,6 +99,13 @@
 		D37A7EF223C48DAC00CC7B0E /* goToHome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = goToHome.png; sourceTree = "<group>"; };
 		D37A7EF523C4AA8F00CC7B0E /* PayToMerchantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayToMerchantViewController.swift; sourceTree = "<group>"; };
 		D37A7EF723C4B59300CC7B0E /* QR-code.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QR-code.png"; sourceTree = "<group>"; };
+		D37A8FA123C5C97C00222B14 /* SAUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAUIButton.swift; sourceTree = "<group>"; };
+		D37A8FA323C5CB9600222B14 /* PaymentMethodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodViewController.swift; sourceTree = "<group>"; };
+		D37A8FA523C5CBAA00222B14 /* ReceiptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptViewController.swift; sourceTree = "<group>"; };
+		D37A8FA723C5E18800222B14 /* mobileReceipt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mobileReceipt.png; sourceTree = "<group>"; };
+		D37A8FA823C5E18800222B14 /* electricityReceipt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = electricityReceipt.png; sourceTree = "<group>"; };
+		D37A8FAB23C5E4F500222B14 /* paymentModeMobile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paymentModeMobile.png; sourceTree = "<group>"; };
+		D37A8FAC23C5E4F600222B14 /* paymentModeElectricity.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paymentModeElectricity.png; sourceTree = "<group>"; };
 		D3B3CE2623BEFA0300D7D6C6 /* SampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3B3CE2923BEFA0300D7D6C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3B3CE2B23BEFA0300D7D6C6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -177,6 +191,8 @@
 			isa = PBXGroup;
 			children = (
 				D302931C23C5A6950016489F /* BillPaymentViewController.swift */,
+				D37A8FA323C5CB9600222B14 /* PaymentMethodViewController.swift */,
+				D37A8FA523C5CBAA00222B14 /* ReceiptViewController.swift */,
 			);
 			path = "Bill Payment";
 			sourceTree = "<group>";
@@ -215,6 +231,7 @@
 		D35E3FCA23BF7050009A5BAE /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				D37A8FA023C5C96100222B14 /* UIComponent */,
 				D35E3FCB23BF7050009A5BAE /* Images */,
 			);
 			path = Resource;
@@ -223,6 +240,10 @@
 		D35E3FCB23BF7050009A5BAE /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				D37A8FAC23C5E4F600222B14 /* paymentModeElectricity.png */,
+				D37A8FAB23C5E4F500222B14 /* paymentModeMobile.png */,
+				D37A8FA823C5E18800222B14 /* electricityReceipt.png */,
+				D37A8FA723C5E18800222B14 /* mobileReceipt.png */,
 				D37A7EF723C4B59300CC7B0E /* QR-code.png */,
 				D35E3FCC23BF7050009A5BAE /* Icons */,
 			);
@@ -283,6 +304,14 @@
 				D37A7EF523C4AA8F00CC7B0E /* PayToMerchantViewController.swift */,
 			);
 			path = PayToMerchant;
+			sourceTree = "<group>";
+		};
+		D37A8FA023C5C96100222B14 /* UIComponent */ = {
+			isa = PBXGroup;
+			children = (
+				D37A8FA123C5C97C00222B14 /* SAUIButton.swift */,
+			);
+			path = UIComponent;
 			sourceTree = "<group>";
 		};
 		D3B3CE1D23BEFA0300D7D6C6 = {
@@ -492,6 +521,7 @@
 				D3E375B023C3432F0060CBAF /* electricityBillTemplate.png in Resources */,
 				D3E375B423C3432F0060CBAF /* wallet.png in Resources */,
 				D3E375B523C3432F0060CBAF /* hotel.png in Resources */,
+				D37A8FAD23C5E4F600222B14 /* paymentModeMobile.png in Resources */,
 				D3E375AF23C3432F0060CBAF /* cab.png in Resources */,
 				D3E375AC23C3432F0060CBAF /* mobileTopup.png in Resources */,
 				D37A7EF323C48DAC00CC7B0E /* goToHome.png in Resources */,
@@ -510,12 +540,15 @@
 				D3E375B823C3432F0060CBAF /* calendar.png in Resources */,
 				D3E375A423C3432F0060CBAF /* profileSetting.png in Resources */,
 				D3E375A923C3432F0060CBAF /* payMerchant.png in Resources */,
+				D37A8FAA23C5E18800222B14 /* electricityReceipt.png in Resources */,
 				D3E375B123C3432F0060CBAF /* billPayButton.png in Resources */,
+				D37A8FA923C5E18800222B14 /* mobileReceipt.png in Resources */,
 				D3E375B623C3432F0060CBAF /* sendMoney.png in Resources */,
 				D37A7EF823C4B59400CC7B0E /* QR-code.png in Resources */,
 				D3E375B723C3432F0060CBAF /* burgerMenu.png in Resources */,
 				D3E375BA23C3432F0060CBAF /* mobileBillTemplate.png in Resources */,
 				D3E375AA23C3432F0060CBAF /* addNewButton.png in Resources */,
+				D37A8FAE23C5E4F600222B14 /* paymentModeElectricity.png in Resources */,
 				D3E375B923C3432F0060CBAF /* sports.png in Resources */,
 				D3E375A323C3432F0060CBAF /* flight.png in Resources */,
 			);
@@ -646,6 +679,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3346D0523BF160700865C2F /* LoginViewController.swift in Sources */,
+				D37A8FA623C5CBAA00222B14 /* ReceiptViewController.swift in Sources */,
+				D37A8FA223C5C97C00222B14 /* SAUIButton.swift in Sources */,
 				D37A7EF623C4AA8F00CC7B0E /* PayToMerchantViewController.swift in Sources */,
 				D3E258B923BF04B60059658B /* Extension.swift in Sources */,
 				D3346D0723BF162A00865C2F /* DashboardViewController.swift in Sources */,
@@ -657,6 +692,7 @@
 				D3346D0923BF18F800865C2F /* UINavigationController+Extension.swift in Sources */,
 				D3B3CE2C23BEFA0300D7D6C6 /* SceneDelegate.swift in Sources */,
 				D375BFD223C39FD9002EF07B /* TableViewCell.swift in Sources */,
+				D37A8FA423C5CB9600222B14 /* PaymentMethodViewController.swift in Sources */,
 				D3E375C123C343410060CBAF /* Const.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
