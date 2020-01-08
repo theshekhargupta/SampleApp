@@ -10,6 +10,7 @@ target 'SampleApp' do
   pod 'SlideMenuControllerSwift'
   pod 'NVActivityIndicatorView'
   pod "TZSegmentedControl"
+  pod 'Firebase/Analytics'
 
   target 'SampleAppTests' do
     inherit! :search_paths

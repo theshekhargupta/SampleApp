@@ -27,7 +27,10 @@ class PayToMerchantViewController: UIViewController {
     
     func configureSegmentControl() {
         let titleCont = TZSegmentedControl(sectionTitles: ["SCAN CODE","MOBILE"])
-        titleCont.frame = CGRect(x: 0, y: self.view.frame.height/10, width: self.view.frame.width, height: self.view.frame.height/11)
+        titleCont.frame = CGRect(x: 0,
+                                 y: 0,
+                                 width: self.view.frame.width,
+                                 height: self.view.frame.height/11)
         titleCont.indicatorWidthPercent = 0.8
         let whitishColor = UIColor(white: 0.75, alpha: 1.0)
         titleCont.backgroundColor = UIColor.systemBlue
@@ -57,10 +60,7 @@ class PayToMerchantViewController: UIViewController {
             } else {
                 self.qrCodeView.isHidden = true
             }
-            
         }
-
     }
-    
 }
 

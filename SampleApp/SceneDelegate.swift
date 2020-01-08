@@ -53,6 +53,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "DashboardViewController")
         let navigation = UINavigationController(rootViewController: vc)
+        UINavigationBar.appearance().barTintColor = .systemBlue
+        UINavigationBar.appearance().tintColor = .white
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        UINavigationBar.appearance().isTranslucent = false
+
 
         let sm = storyboard.instantiateViewController(withIdentifier: "SlideMenuViewController")
 

@@ -10,7 +10,7 @@ import UIKit
 
 class SlideMenuViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
-    var yourTableView: UITableView = UITableView()
+    var tableView: UITableView = UITableView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,12 +23,12 @@ class SlideMenuViewController: UIViewController, UITableViewDataSource, UITableV
     }
 
     func configureTableView() {
-        self.yourTableView.frame = CGRect(x: 10, y: 10, width: self.view.frame.size.width - 150, height: self.view.frame.size.height - 100)
-        self.view.addSubview(yourTableView)
-        self.yourTableView.backgroundColor = .clear
-        self.yourTableView.dataSource = self
-        self.yourTableView.delegate = self
-        self.yourTableView.separatorColor = .clear
+        self.tableView.frame = CGRect(x: 10, y: 10, width: self.view.frame.size.width - 150, height: self.view.frame.size.height - 100)
+        self.view.addSubview(tableView)
+        self.tableView.backgroundColor = .clear
+        self.tableView.dataSource = self
+        self.tableView.delegate = self
+        self.tableView.separatorColor = .clear
     }
 
     // MARK - UITableView Delegates

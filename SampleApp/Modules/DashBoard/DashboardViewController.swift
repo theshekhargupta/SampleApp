@@ -178,7 +178,7 @@ extension DashboardViewController {
             break
         case 1:
             print("send Money")
-            fatalError()
+//            fatalError()
             break
         default:
             break
@@ -186,18 +186,27 @@ extension DashboardViewController {
     }
     
     func handleBillPayament(_ index: Int) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "BillPaymentViewController") as! BillPaymentViewController
+
         switch index {
         case 0:
             print("Mobile topup")
+            vc.selectedItem = BillPaymentItems.MobileTopup.rawValue
             break
         case 1:
             print("Mobile Bill payment")
+            vc.selectedItem = BillPaymentItems.MobileBillPayment.rawValue
             break
         case 2:
             print("Electricity Bill payment")
+            vc.selectedItem = BillPaymentItems.ElectricityBillPayment.rawValue
             break
         default:
             break
+        }
+        if vc.selectedItem != "" {
+            self.navigationController?.push(vc, animated: true)
         }
     }
     
@@ -207,23 +216,23 @@ extension DashboardViewController {
         switch index {
         case 0:
             print("Hotel")
-            vc.selectedView = SelectedItem.hotel.rawValue
+            vc.selectedItem = BookingItems.Hotel.rawValue
             break
         case 1:
             print("cab")
-            vc.selectedView = SelectedItem.cab.rawValue
+            vc.selectedItem = BookingItems.Cab.rawValue
             break
         case 2:
             print("flight")
-            vc.selectedView = SelectedItem.flight.rawValue
+            vc.selectedItem = BookingItems.Flight.rawValue
             break
         case 3:
             print("train")
-            vc.selectedView = SelectedItem.train.rawValue
+            vc.selectedItem = BookingItems.Train.rawValue
             break
         case 4:
             print("Bus")
-            vc.selectedView = SelectedItem.bus.rawValue
+            vc.selectedItem = BookingItems.Bus.rawValue
             break
         case 5:
             print("Movie")
@@ -234,7 +243,7 @@ extension DashboardViewController {
         default:
             return
         }
-        if vc.selectedView != "" {
+        if vc.selectedItem != "" {
             self.navigationController?.push(vc, animated: true)
         }
     }
