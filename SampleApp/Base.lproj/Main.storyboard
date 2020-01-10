@@ -202,10 +202,40 @@
                                     <action selector="nextButtonAction" destination="TbQ-EQ-V8e" eventType="touchUpInside" id="Nmn-fm-TNx"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="bezel" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="YJm-sl-9mU" customClass="DropDown" customModule="iOSDropDown">
+                                <rect key="frame" x="41" y="90" width="292" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="bezel" placeholder="Enter Mobile Number" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="Lhn-U8-rq1">
+                                <rect key="frame" x="41" y="41" width="292" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="bezel" placeholder="Enter Amount" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="DWh-EK-7ua">
+                                <rect key="frame" x="41" y="188" width="292" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="bezel" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="pkD-kW-BDH" customClass="DropDown" customModule="iOSDropDown">
+                                <rect key="frame" x="41" y="139" width="292" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Jez-zQ-FeC"/>
                     </view>
+                    <connections>
+                        <outlet property="amountTextField" destination="DWh-EK-7ua" id="tco-85-OjX"/>
+                        <outlet property="billNumberTextField" destination="Lhn-U8-rq1" id="Fnr-eg-Mpt"/>
+                        <outlet property="circleDropDown" destination="pkD-kW-BDH" id="4c9-KV-NmE"/>
+                        <outlet property="serviceProviderDropDown" destination="YJm-sl-9mU" id="6eK-9R-9gt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vIX-rg-n4U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

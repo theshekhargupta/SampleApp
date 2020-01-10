@@ -9,8 +9,10 @@ target 'SampleApp' do
   pod 'TextFieldEffects'
   pod 'SlideMenuControllerSwift'
   pod 'NVActivityIndicatorView'
-  pod "TZSegmentedControl"
+  pod 'TZSegmentedControl'
   pod 'Firebase/Analytics'
+  pod 'UserExperior', '4.1.57'
+  pod 'iOSDropDown'
 
   target 'SampleAppTests' do
     inherit! :search_paths

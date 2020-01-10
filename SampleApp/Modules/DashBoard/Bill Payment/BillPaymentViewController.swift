@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import iOSDropDown
 
 enum BillPaymentItems: String {
     case MobileTopup = "Mobile Topup"
@@ -16,7 +17,14 @@ enum BillPaymentItems: String {
 
 class BillPaymentViewController: UIViewController {
     var selectedItem = ""
-    @IBOutlet var nextButton: UIButton!
+    var serviceProvide = [""]
+    var circle = [""]
+    
+    @IBOutlet weak var billNumberTextField : UITextField!
+    @IBOutlet weak var serviceProviderDropDown : DropDown!
+    @IBOutlet weak var circleDropDown : DropDown!
+    @IBOutlet weak var amountTextField : UITextField!
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +34,9 @@ class BillPaymentViewController: UIViewController {
 
 //MARK:- Configure UI
     func configureUI() {
+        self.configureTextfield()
+        self.configureDropDownItems()
+        
         let selectedItem =  BillPaymentItems(rawValue: self.selectedItem)
         switch selectedItem {
         case .MobileTopup:
@@ -35,7 +46,7 @@ class BillPaymentViewController: UIViewController {
             self.navigationItem.title = BillPaymentItems.MobileBillPayment.rawValue
             break
         case .ElectricityBillPayment:
-            self.navigationItem.title = BillPaymentItems.ElectricityBillPayment.rawValue
+            self.billNumberTextField.attributedPlaceholder = NSAttributedString(string: "Enter Consumer Number", attributes: [NSAttributedString.Key.foregroundColor : UIColor.lightGray])
             break
         default:
             print("Case Default")
@@ -43,6 +54,33 @@ class BillPaymentViewController: UIViewController {
         }
     }
     
+    func configureTextfield() {
+        self.billNumberTextField.addDoneButtonOnKeyboard()
+        self.amountTextField.addDoneButtonOnKeyboard()
+    }
+    
+    func configureDropDownItems() {
+        var serviceProvider = ""
+        var circle = ""
+        if (self.selectedItem == BillPaymentItems.ElectricityBillPayment.rawValue) {
+            serviceProvider = "Electricity Board"
+            circle = "City"
+            
+            self.serviceProviderDropDown.optionArray = ["Maha Vitran", "MSEB", "Relience"]
+            self.circleDropDown.optionArray = ["Mumbai", "Thane", "Pune"]
+
+        } else {
+            serviceProvider = "Service Provider"
+            circle = "Circle"
+            
+            self.serviceProviderDropDown.optionArray = ["Airtel", "Idea", "Vodafone"]
+            self.circleDropDown.optionArray = ["Mumbai", "Thane"]
+        }
+        
+        self.serviceProviderDropDown.attributedPlaceholder = NSAttributedString(string: serviceProvider, attributes: [NSAttributedString.Key.foregroundColor : UIColor.lightGray])
+        self.circleDropDown.attributedPlaceholder = NSAttributedString(string: circle, attributes: [NSAttributedString.Key.foregroundColor : UIColor.lightGray])
+    }
+        
 // MARK:- Action
     @IBAction func nextButtonAction() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
