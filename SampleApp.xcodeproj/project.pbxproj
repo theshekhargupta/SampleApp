@@ -34,6 +34,7 @@
 		D3B3CE3623BEFA0900D7D6C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3B3CE3423BEFA0900D7D6C6 /* LaunchScreen.storyboard */; };
 		D3B3CE4123BEFA0900D7D6C6 /* SampleAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B3CE4023BEFA0900D7D6C6 /* SampleAppTests.swift */; };
 		D3B3CE4C23BEFA0A00D7D6C6 /* SampleAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B3CE4B23BEFA0A00D7D6C6 /* SampleAppUITests.swift */; };
+		D3DB535823C838E300EFF56B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D3DB535723C838E300EFF56B /* GoogleService-Info.plist */; };
 		D3DD49C423BF5DD0007A20D1 /* SlideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DD49C323BF5DD0007A20D1 /* SlideMenuViewController.swift */; };
 		D3E258B923BF04B60059658B /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E258B823BF04B60059658B /* Extension.swift */; };
 		D3E375A323C3432F0060CBAF /* flight.png in Resources */ = {isa = PBXBuildFile; fileRef = D3E3758B23C3432D0060CBAF /* flight.png */; };
@@ -119,6 +120,7 @@
 		D3B3CE4723BEFA0A00D7D6C6 /* SampleAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3B3CE4B23BEFA0A00D7D6C6 /* SampleAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleAppUITests.swift; sourceTree = "<group>"; };
 		D3B3CE4D23BEFA0A00D7D6C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3DB535723C838E300EFF56B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D3DD49C323BF5DD0007A20D1 /* SlideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideMenuViewController.swift; sourceTree = "<group>"; };
 		D3E258B823BF04B60059658B /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		D3E3758B23C3432D0060CBAF /* flight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flight.png; sourceTree = "<group>"; };
@@ -348,6 +350,7 @@
 				D3B3CE3223BEFA0900D7D6C6 /* Assets.xcassets */,
 				D3B3CE3423BEFA0900D7D6C6 /* LaunchScreen.storyboard */,
 				D3B3CE3723BEFA0900D7D6C6 /* Info.plist */,
+				D3DB535723C838E300EFF56B /* GoogleService-Info.plist */,
 			);
 			path = SampleApp;
 			sourceTree = "<group>";
@@ -547,6 +550,7 @@
 				D37A7EF823C4B59400CC7B0E /* QR-code.png in Resources */,
 				D3E375B723C3432F0060CBAF /* burgerMenu.png in Resources */,
 				D3E375BA23C3432F0060CBAF /* mobileBillTemplate.png in Resources */,
+				D3DB535823C838E300EFF56B /* GoogleService-Info.plist in Resources */,
 				D3E375AA23C3432F0060CBAF /* addNewButton.png in Resources */,
 				D37A8FAE23C5E4F600222B14 /* paymentModeElectricity.png in Resources */,
 				D3E375B923C3432F0060CBAF /* sports.png in Resources */,

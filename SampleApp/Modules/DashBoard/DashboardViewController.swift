@@ -178,7 +178,7 @@ extension DashboardViewController {
             break
         case 1:
             print("send Money")
-//            fatalError()
+            fatalError()
             break
         default:
             break
