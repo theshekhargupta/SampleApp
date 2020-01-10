@@ -8,6 +8,8 @@
 
 import UIKit
 
+let toastDuration = 0.8
+
 struct APP_IMAGES {
     static let payToMerchant = "payMerchant.png"
     static let sendMoney = "sendMoney.png"
@@ -121,6 +123,20 @@ extension UIColor {
         let brightness = CGFloat(arc4random() % 100) / 100
 
         return UIColor(hue: hue, saturation: saturation, brightness: brightness, alpha: 1.0)
+    }
+}
+
+
+func showToast(controller: UIViewController, message : String, seconds: Double) {
+    let alert = UIAlertController(title: nil, message: message, preferredStyle: .alert)
+    alert.view.backgroundColor = UIColor.black
+    alert.view.alpha = 0.6
+    alert.view.layer.cornerRadius = 15
+
+    controller.present(alert, animated: true)
+
+    DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + seconds) {
+        alert.dismiss(animated: true)
     }
 }
 

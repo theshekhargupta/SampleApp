@@ -21,6 +21,9 @@ class PayToMerchantViewController: UIViewController {
 
     //MARK:- Configure UI
     func configureUI() {
+        self.view.makeToast("Pay to merchant selected",
+                            duration: toastDuration,
+                            position: .bottom)
         self.navigationItem.title = "Pay to Merchant"
         self.configureSegmentControl()
     }

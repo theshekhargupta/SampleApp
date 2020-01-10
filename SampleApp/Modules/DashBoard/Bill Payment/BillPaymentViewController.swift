@@ -41,11 +41,17 @@ class BillPaymentViewController: UIViewController {
         switch selectedItem {
         case .MobileTopup:
             self.navigationItem.title = BillPaymentItems.MobileTopup.rawValue
+            self.view.makeToast("Mobile Top-up selected",
+                                duration: toastDuration,
+                                position: .bottom)
             break
         case .MobileBillPayment:
             self.navigationItem.title = BillPaymentItems.MobileBillPayment.rawValue
             break
         case .ElectricityBillPayment:
+            self.view.makeToast("Electricity bill payment selected",
+                                duration: toastDuration,
+                                position: .bottom)
             self.billNumberTextField.attributedPlaceholder = NSAttributedString(string: "Enter Consumer Number", attributes: [NSAttributedString.Key.foregroundColor : UIColor.lightGray])
             break
         default:

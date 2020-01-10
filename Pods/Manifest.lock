@@ -70,6 +70,7 @@ PODS:
   - NVActivityIndicatorView/Presenter (4.8.0)
   - SlideMenuControllerSwift (4.0.0)
   - TextFieldEffects (1.6.0)
+  - Toast-Swift (5.0.1)
   - TZSegmentedControl (1.0.1)
   - UserExperior (4.1.57)
 
@@ -79,6 +80,7 @@ DEPENDENCIES:
   - NVActivityIndicatorView
   - SlideMenuControllerSwift
   - TextFieldEffects
+  - Toast-Swift (~> 5.0.1)
   - TZSegmentedControl
   - UserExperior (= 4.1.57)
 
@@ -99,6 +101,7 @@ SPEC REPOS:
     - NVActivityIndicatorView
     - SlideMenuControllerSwift
     - TextFieldEffects
+    - Toast-Swift
     - TZSegmentedControl
     - UserExperior
 
@@ -118,9 +121,10 @@ SPEC CHECKSUMS:
   NVActivityIndicatorView: d24b7ebcf80af5dcd994adb650e2b6c93379270f
   SlideMenuControllerSwift: 021d6318201c53d4d4d3710517d43d6c556c7dd0
   TextFieldEffects: 529b8aff706fb40f82c41c780c0777941a893796
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
   TZSegmentedControl: 348d8d71b37c9af32f6c97b661124bcf66763b51
   UserExperior: 6ae8006e2f715238b5f06d4865cd4e259c91c30d
 
-PODFILE CHECKSUM: aab0e60fcf3c17558ee614be1bb62b9406f1359f
+PODFILE CHECKSUM: 13abe927dcabccdf1b52751717a5759a319d8120
 
 COCOAPODS: 1.8.4

@@ -13,6 +13,7 @@ target 'SampleApp' do
   pod 'Firebase/Analytics'
   pod 'UserExperior', '4.1.57'
   pod 'iOSDropDown'
+  pod 'Toast-Swift', '~> 5.0.1'
 
   target 'SampleAppTests' do
     inherit! :search_paths

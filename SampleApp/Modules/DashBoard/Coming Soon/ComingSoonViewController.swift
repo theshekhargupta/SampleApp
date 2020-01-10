@@ -53,10 +53,16 @@ class ComingSoonViewController: UIViewController {
             self.navigationItem.title = BookingItems.Cab.rawValue
             break
         case .Flight:
+            self.view.makeToast("Flight booking feature coming soon!",
+                                duration: toastDuration,
+                                position: .bottom)
             currentImage = APP_IMAGES.flight
             self.navigationItem.title = BookingItems.Flight.rawValue
             break
         case .Train:
+            self.view.makeToast("Train booking feature coming soon!",
+                                duration: toastDuration,
+                                position: .bottom)
             currentImage = APP_IMAGES.train
             self.navigationItem.title = BookingItems.Train.rawValue
             break
