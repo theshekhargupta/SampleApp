@@ -75,7 +75,7 @@ class DashboardViewController: UIViewController, UIScrollViewDelegate, NVActivit
         activityIndicatorView.color = .red
         self.button.addSubview(activityIndicatorView)
         activityIndicatorView.startAnimating()
-        DispatchQueue.main.asyncAfter(deadline: .now() + 5, execute: {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0, execute: {
             activityIndicatorView.stopAnimating()
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let vc = storyboard.instantiateViewController(withIdentifier: "LoadMoneyViewController")

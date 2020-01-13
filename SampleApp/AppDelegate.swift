@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure()
-        UserExperior.initialize("")
+        UserExperior.initialize("76338b1c-c45c-48a9-bfcb-9603d01756a4")
         return true
     }
 
