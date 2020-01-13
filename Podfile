@@ -14,6 +14,7 @@ target 'SampleApp' do
   pod 'UserExperior', '4.1.57'
   pod 'iOSDropDown'
   pod 'Toast-Swift', '~> 5.0.1'
+  pod 'NVActivityIndicatorView'
 
   target 'SampleAppTests' do
     inherit! :search_paths

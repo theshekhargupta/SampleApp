@@ -94,7 +94,7 @@ class BillPaymentViewController: UIViewController {
         let selectedItem =  BillPaymentItems(rawValue: self.selectedItem)
         switch selectedItem {
         case .MobileTopup:
-            vc.selectedItem = BillPaymentItems.MobileTopup.rawValue
+            fatalError()
             break
         case .ElectricityBillPayment:
             vc.selectedItem = BillPaymentItems.ElectricityBillPayment.rawValue

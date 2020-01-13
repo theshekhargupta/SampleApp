@@ -36,6 +36,7 @@ class ComingSoonViewController: UIViewController {
         if (selectedItem == BookingItems.Hotel.rawValue) {
             self.hotelListView.isHidden = false
             self.configureTableView()
+            self.view.bringSubviewToFront(self.hotelListView)
         }
     }
 

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import UserExperior
 
 class LoginViewController: UIViewController {
     
@@ -41,6 +42,9 @@ class LoginViewController: UIViewController {
     
     //MARK:- Navigation
     @IBAction func showDashboardView() {
+        if let userID = self.textField.text {
+            UserExperior.setUserIdentifier(userID)
+        }
         let scene = UIApplication.shared.connectedScenes.first
         if let sd : SceneDelegate = (scene?.delegate as? SceneDelegate) {
             sd.showDashboard()
@@ -49,4 +53,3 @@ class LoginViewController: UIViewController {
     
 
 }
-

@@ -7,11 +7,14 @@
 //
 
 import UIKit
+import NVActivityIndicatorView
 
-class DashboardViewController: UIViewController, UIScrollViewDelegate {
+class DashboardViewController: UIViewController, UIScrollViewDelegate, NVActivityIndicatorViewable {
     
-    @IBOutlet var tableview: UITableView!
-    @IBOutlet var scrollView: UIScrollView!
+    @IBOutlet weak var tableview: UITableView!
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var button: UIButton!
+
     
     var model = dataArray as Array<AnyObject>
     var storedOffsets = [Int: CGFloat]()
@@ -63,7 +66,23 @@ class DashboardViewController: UIViewController, UIScrollViewDelegate {
         self.navigationController?.push(vc, animated: true)
     }
     
-
+    @IBAction func showAddPaymentView() {
+        let activityIndicatorView = NVActivityIndicatorView(frame: CGRect(x: 0,
+                                                                          y: 0,
+                                                                          width: self.button.frame.size.width,
+                                                                          height: self.button.frame.size.height),
+                                                            type: .circleStrokeSpin)
+        activityIndicatorView.color = .red
+        self.button.addSubview(activityIndicatorView)
+        activityIndicatorView.startAnimating()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 5, execute: {
+            activityIndicatorView.stopAnimating()
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "LoadMoneyViewController")
+            self.navigationController?.push(vc, animated: true)
+        })
+    }
+    
 }
 
 extension DashboardViewController:  UITableViewDataSource, UITableViewDelegate {
@@ -106,7 +125,7 @@ extension DashboardViewController: UICollectionViewDelegate, UICollectionViewDat
         if let labelValue = rowData["label"] {
             cell.addSubview(self.createLabel(labelValue, cell: cell))
         }
-
+        
         if let imageName = rowData["image"] {
             cell.addSubview(self.createImageView(imageName, cell: cell))
         }
