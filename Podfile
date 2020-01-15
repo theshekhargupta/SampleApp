@@ -11,7 +11,7 @@ target 'SampleApp' do
   pod 'NVActivityIndicatorView'
   pod 'TZSegmentedControl'
   pod 'Firebase/Analytics'
-  pod 'UserExperior', '4.1.57'
+  pod 'UserExperior', '~> 4.1.64'
   pod 'iOSDropDown'
   pod 'Toast-Swift', '~> 5.0.1'
   pod 'NVActivityIndicatorView'

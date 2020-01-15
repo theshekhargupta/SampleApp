@@ -108,9 +108,8 @@ extension DashboardViewController:  UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         guard let tableViewCell = cell as? TableViewCell else { return }
         storedOffsets[indexPath.row] = tableViewCell.collectionViewOffset
-    }}
-
-
+    }
+}
 
 extension DashboardViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -119,15 +118,20 @@ extension DashboardViewController: UICollectionViewDelegate, UICollectionViewDat
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath)
+        
         let collectionViewArray = model[collectionView.tag] as! Array<AnyObject>
         let rowData: Dictionary<String, String> = collectionViewArray[indexPath.row] as! Dictionary<String, String>
         
+        cell.subviews.forEach({ $0.removeFromSuperview() })
+        
         if let labelValue = rowData["label"] {
-            cell.addSubview(self.createLabel(labelValue, cell: cell))
+            let label = self.createLabel(labelValue, cell: cell)
+            cell.addSubview(label)
         }
         
         if let imageName = rowData["image"] {
-            cell.addSubview(self.createImageView(imageName, cell: cell))
+            let imageview = self.createImageView(imageName, cell: cell)
+            cell.addSubview(imageview)
         }
 
         return cell
@@ -161,6 +165,8 @@ extension DashboardViewController: UICollectionViewDelegate, UICollectionViewDat
 
         return imageView
     }
+    
+    
     
 }
 

@@ -72,7 +72,7 @@ PODS:
   - TextFieldEffects (1.6.0)
   - Toast-Swift (5.0.1)
   - TZSegmentedControl (1.0.1)
-  - UserExperior (4.1.57)
+  - UserExperior (4.1.64)
 
 DEPENDENCIES:
   - Firebase/Analytics
@@ -82,7 +82,7 @@ DEPENDENCIES:
   - TextFieldEffects
   - Toast-Swift (~> 5.0.1)
   - TZSegmentedControl
-  - UserExperior (= 4.1.57)
+  - UserExperior (~> 4.1.64)
 
 SPEC REPOS:
   trunk:
@@ -123,8 +123,8 @@ SPEC CHECKSUMS:
   TextFieldEffects: 529b8aff706fb40f82c41c780c0777941a893796
   Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
   TZSegmentedControl: 348d8d71b37c9af32f6c97b661124bcf66763b51
-  UserExperior: 6ae8006e2f715238b5f06d4865cd4e259c91c30d
+  UserExperior: 377fe3ec076e3a762e359c2e021819b514be6298
 
-PODFILE CHECKSUM: 13abe927dcabccdf1b52751717a5759a319d8120
+PODFILE CHECKSUM: 7a82fa4975a7b019660fe798debc0880402c2e39
 
 COCOAPODS: 1.8.4
